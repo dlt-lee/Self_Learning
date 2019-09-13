@@ -1,0 +1,16 @@
+x1=0:0.1:40;
+y1=gaussmf(x1-7.5,[2 4]);
+x2=0:0.1:40;
+y2=gaussmf(x2-12.5,[2 4]);
+x3=0:0.1:40;
+y3=gaussmf(x3-9,[4 5]);
+x4=0:0.1:40;
+y4=gaussmf(x4-20,[4 5]);
+hold on;
+plot(x1,y1,'Color',[1 0 0]);
+plot(x2,y2,'Color',[0 0 1]);
+plot(x3,y3*1.5,'Color',[0 0 0]);
+plot(x4,y4*1.5,'Color',[0 1 1]);
+title('灰盒测试与传统黑盒测试对比图');
+xlabel('x');
+ylabel('y');
